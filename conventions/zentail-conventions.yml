@@ -1,0 +1,51 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.zentail.com/en/collections/96118-open-api
+authentication:
+  style: api-token
+  detail: >-
+    Open API requests carry an account API token (see authentication/zentail-authentication.yml).
+    The Sales Channel / Listings API uses clientId + clientSecret.
+reports:
+  description: >-
+    Bulk product/inventory import and export is performed through the Reports surface.
+  operations:
+  - method: POST
+    path: /report
+    summary: Submit a report job (bulk import or export).
+    documented_parameters:
+    - name: createNewProducts
+      type: boolean
+      note: When true, creates new SKUs for rows not already present.
+    - name: overwriteWithBlank
+      type: boolean
+      note: When true, blank fields overwrite existing data.
+    - name: isExport
+      type: boolean
+      note: true for an export report, false for an import.
+    - name: data
+      type: string
+      note: Base64-encoded file content for import jobs.
+    - name: delimiter
+      type: string
+      note: Field delimiter for the data payload (e.g. comma, pipe).
+  - method: GET
+    path: /report/{reportId}
+    summary: Retrieve report data/status for a specific report ID.
+    source: https://help.zentail.com/en/articles/1530976-using-the-reports-endpoint
+idempotency:
+  supported: unknown
+  detail: No idempotency-key mechanism is documented in the public help articles.
+pagination:
+  style: unknown
+versioning:
+  style: unknown
+error_envelope:
+  shape: unknown
+notes: >-
+  Derived from Zentail's public Open API help articles. Only the Reports operations
+  (POST /report, GET /report/{reportId}) and their parameters were verifiable verbatim;
+  the full operation set, base path, pagination, and error envelope live in the
+  Stoplight developer portal (developer.zentail.com), which renders client-side and was
+  not machine-extractable in this pass. No idempotency contract is documented, so no
+  Idempotency pointer is emitted.

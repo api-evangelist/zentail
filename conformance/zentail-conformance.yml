@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: derived
+source: >-
+  Derived from Zentail public developer/help documentation and live host probes;
+  no OpenAPI spec was machine-extractable (Stoplight client-rendered portal).
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    signin.zentail.com publishes a /.well-known/oauth-authorization-server document
+    (WorkOS AuthKit) for application SSO; the Sales Channel API uses clientId +
+    clientSecret client-credentials auth.
+- id: oidc
+  conforms: true
+  evidence: signin.zentail.com publishes /.well-known/openid-configuration (WorkOS AuthKit).
+- id: api-key-auth
+  conforms: true
+  evidence: Open API authenticates with an account-scoped API token.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error contract documented in public materials.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No /.well-known/security.txt on any probed Zentail host.
+notes: >-
+  Standards asserted from documentation + well-known probes only. No published
+  compliance program (SOC 2 / ISO 27001 / PCI / HIPAA) was located, so no Compliance
+  pointer is emitted.

@@ -1,0 +1,73 @@
+﻿# Zentail
+
+
+> Zentail is a multichannel ecommerce platform that helps brands manage product listings, inventory, pricing, and orders across marketplaces like Amazon, Walmart, Target Plus, and eBay from one system.
+
+
+## Overview
+
+
+- [Zentail homepage](https://www.zentail.com/): Overview of the platform and how it manages listings, inventory, and orders across marketplaces.
+- [Multichannel overview](https://www.zentail.com/multichannel): How to manage ecommerce operations across multiple marketplaces from a single platform.
+- [Pricing](https://www.zentail.com/pricing): View pricing plans, included features, and how Zentail is packaged for multichannel sellers.
+
+
+## Marketplaces
+
+
+- [Walmart Marketplace integration](https://www.zentail.com/walmartmarketplace): Create and publish Walmart listings faster with automated setup, real-time validation, and support for Walmart listing requirements.
+- [Target Plus integration](https://www.zentail.com/target-plus-marketplace): Manage Target Plus listings with structured product data, required attributes, and centralized control for compliance.
+- [Amazon integration](https://www.zentail.com/amazon): Create and manage Amazon listings, sync inventory, and update pricing using a single catalog.
+- [All marketplace integrations](https://www.zentail.com/apps): List of supported marketplaces and integration partners.
+
+
+## Platform
+
+
+- [Multichannel platform](https://www.zentail.com/multichannel): Manage listings, inventory, and orders across all marketplaces from one system instead of separate tools.
+- [Product data management](https://www.zentail.com/solutions/product-information-management): Organize product data and map attributes to meet marketplace requirements.
+- [Listing management](https://www.zentail.com/solutions/listing-management): Create, edit, and publish listings in bulk across multiple marketplaces.
+- [Inventory management](https://www.zentail.com/solutions/inventory-management): Keep inventory levels synced across channels to avoid overselling.
+- [Order management](https://www.zentail.com/solutions/order-management): View and manage orders from all marketplaces in one place.
+- [Pricing management](https://www.zentail.com/solutions/pricing-management): Set pricing rules and update prices across marketplaces from one system.
+- [Business analytics](https://www.zentail.com/solutions/business-analytics): View performance data across channels to track sales and identify trends.
+
+
+## Comparisons
+
+
+- [Zentail vs ChannelAdvisor / Rithum](https://www.zentail.com/compare/channel-advisor): Compare features, setup, and workflows to understand differences between Zentail and ChannelAdvisor/Rithum.
+
+
+## Resources
+
+
+- [Blog](https://www.zentail.com/blog): Articles about ecommerce operations, marketplaces, and product updates.
+- [Ecommerce software evaluation checklist](https://www.zentail.com/learn-more/checklist-evaluating-ecommerce-software): Checklist for comparing multichannel ecommerce platforms and evaluating key features.
+
+
+## Use Cases
+
+
+- Manage listings across Amazon, Walmart, and Target Plus from one platform
+- Expand from one marketplace to multiple channels
+- Keep product data consistent across marketplaces
+- Sync inventory to avoid overselling
+- Reduce manual work in ecommerce operations
+
+
+## Disambiguation
+
+
+**Zentail is NOT:**
+- A marketplace
+- A fulfillment provider
+- A dropshipping supplier
+
+
+**Zentail IS:**
+- A multichannel ecommerce platform for managing marketplace operations
+
+
+## Last updated
+2026-04

@@ -1,0 +1,47 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of Zentail hosts (/.well-known/*)
+hosts:
+- host: https://signin.zentail.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: zentail-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: zentail-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.zentail.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://developer.zentail.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://www.zentail.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+notes: >-
+  OIDC + OAuth authorization-server discovery documents are published at
+  signin.zentail.com (WorkOS AuthKit) and govern the Zentail application SSO, not the
+  Open API (which authenticates with an account API token). No security.txt or
+  API-catalog document is published on any Zentail host.

@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.zentail.com/en/collections/96118-open-api
+docs: https://help.zentail.com/en/articles/1460332-generate-api-token
+summary:
+  types: [apiKey, oauth2]
+  api_key_in: [header]
+  oauth2_flows: [clientCredentials]
+schemes:
+- name: OpenAPIToken
+  type: apiKey
+  in: header
+  description: >-
+    Zentail's Open API authenticates with a per-account API token. Generate it in the
+    Zentail app under Account Settings > API Access > GENERATE NEW TOKEN (Account Admin
+    permission is required to view/create tokens). Tokens can be labeled and revoked;
+    keep the token secret.
+  docs: https://help.zentail.com/en/articles/1460332-generate-api-token
+  sources: [searched:help.zentail.com]
+- name: SalesChannelClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  description: >-
+    The Sales Channel / Listings API (used to build custom sales-channel, inventory,
+    and fulfillment integrations) authenticates integrators with a clientId and
+    clientSecret to obtain access to its endpoints.
+  docs: https://help.zentail.com/en/articles/4430986-creating-a-new-sales-channel-integration-for-zentail
+  sources: [searched:help.zentail.com]
+notes: >-
+  Two distinct auth models: (1) the Open API uses an account-scoped API token
+  (apiKey, header); (2) the Sales Channel / Listings API uses clientId + clientSecret
+  (OAuth2 client-credentials style). Separately, the Zentail web application signs in
+  via signin.zentail.com (WorkOS AuthKit OIDC) — that governs app SSO, not API access.
+  Exact token header name and Sales Channel token endpoint are documented in the
+  Stoplight developer portal (developer.zentail.com), which renders client-side and
+  was not machine-extractable in this pass.

@@ -1,7 +1,28 @@
 aid: zentail
 name: Zentail
-description: Zentail is a company surfaced as a portfolio company of a16z, y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zentail is a multichannel ecommerce platform that helps brands and retailers manage
+  product listings, inventory, pricing, and orders across marketplaces like Amazon,
+  Walmart, Target Plus, eBay, Shopify, BigCommerce, and Newegg from a single system.
+  Its SMART Types technology structures product data once and publishes it to every
+  channel, while centralized inventory, order, and pricing management keep operations
+  in sync and reduce overselling. Zentail exposes an Open API (authenticated with an
+  account API token generated in Account Settings) plus a Sales Channel / Listings API
+  (clientId + clientSecret) so developers can build custom sales-channel, inventory,
+  and fulfillment integrations and run bulk product report imports and exports.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://uploads-ssl.webflow.com/5bbe02f84941df1b66dda9b5/5d488edbb9fe66f3681b8238_Zentail_logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/zentail/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +33,86 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Ecommerce
+- Multichannel
+- Marketplace
+- Product Information Management
+- Inventory Management
+- Order Management
+- Listing Management
+- Retail
+apis:
+- name: Zentail Open API
+  description: >-
+    Zentail's Open API for building custom sales-channel, inventory, and fulfillment
+    integrations and running bulk product report imports/exports. Authenticated with an
+    account API token generated under Account Settings > API Access (Account Admin
+    permission required).
+  humanURL: https://developer.zentail.com/
+  baseURL: https://api.zentail.com
+  tags:
+  - Ecommerce
+  - Multichannel
+  - Marketplace
+  - Reports
+  properties:
+  - type: APIReference
+    url: https://developer.zentail.com/
+  - type: Documentation
+    url: https://help.zentail.com/en/collections/96118-open-api
+  - type: GettingStarted
+    url: https://help.zentail.com/en/articles/1460332-generate-api-token
+  - type: Authentication
+    url: authentication/zentail-authentication.yml
+  - type: Conventions
+    url: conventions/zentail-conventions.yml
+common:
+- type: DomainSecurity
+  url: security/zentail-domain-security.yml
+- type: DeveloperPortal
+  url: https://developer.zentail.com/
+- type: Documentation
+  url: https://help.zentail.com/en/collections/96118-open-api
+- type: APIReference
+  url: https://developer.zentail.com/
+- type: GettingStarted
+  url: https://help.zentail.com/en/articles/1460332-generate-api-token
+- type: Support
+  url: https://help.zentail.com/
+- type: Blog
+  url: https://www.zentail.com/blog
+- type: Pricing
+  url: https://www.zentail.com/pricing
+- type: SignUp
+  url: https://app.zentail.com/login
+- type: TermsOfService
+  url: https://www.zentail.com/terms
+- type: PrivacyPolicy
+  url: https://www.zentail.com/privacy
+- type: StatusPage
+  url: https://status.zentail.com/
+- type: Authentication
+  url: authentication/zentail-authentication.yml
+- type: Conventions
+  url: conventions/zentail-conventions.yml
+- type: Lifecycle
+  url: lifecycle/zentail-lifecycle.yml
+- type: LLMsTxt
+  url: llms/zentail-llms.txt
+- type: WellKnown
+  url: well-known/zentail-well-known.yml
+- type: Conformance
+  url: conformance/zentail-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

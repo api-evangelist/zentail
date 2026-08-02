@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.zentail.com/
+status_page: https://status.zentail.com/
+status_page_vendor: Atlassian Statuspage
+versioning:
+  scheme: unknown
+  notes: >-
+    No public versioning policy was located. The Open API reference is hosted on
+    Stoplight at developer.zentail.com; the API host is api.zentail.com.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation / sunset policy located.
+sla:
+  url: null
+  uptime_target: null
+deprecated_operations: []
+notes: >-
+  Confirmed live artifacts: an Atlassian Statuspage at status.zentail.com. No public
+  changelog, deprecation policy, roadmap, or SLA page was found during this pass.
