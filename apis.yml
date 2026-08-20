@@ -36,6 +36,16 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
+- E-Commerce
+- Multi-Channel
+- Marketplace
+- Product Information Management
+- Inventory Management
+- Order Management
+- Listing Management
+- Retail
+tags_raw:
+- Company
 - Ecommerce
 - Multichannel
 - Marketplace
@@ -54,6 +64,11 @@ apis:
   humanURL: https://developer.zentail.com/
   baseURL: https://api.zentail.com
   tags:
+  - E-Commerce
+  - Multi-Channel
+  - Marketplace
+  - Reports
+  tags_raw:
   - Ecommerce
   - Multichannel
   - Marketplace
