@@ -10,6 +10,17 @@ description: >-
   account API token generated in Account Settings) plus a Sales Channel / Listings API
   (clientId + clientSecret) so developers can build custom sales-channel, inventory,
   and fulfillment integrations and run bulk product report imports and exports.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
