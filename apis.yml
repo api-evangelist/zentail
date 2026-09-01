@@ -48,7 +48,7 @@ modified: '2026-07-21'
 tags:
 - Company
 - E-Commerce
-- Multichannel
+- Multi-Channel
 - Marketplace
 - Product Information Management
 - Inventory Management
@@ -76,7 +76,7 @@ apis:
   baseURL: https://api.zentail.com
   tags:
   - E-Commerce
-  - Multichannel
+  - Multi-Channel
   - Marketplace
   - Reports
   tags_raw:
