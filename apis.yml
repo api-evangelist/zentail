@@ -96,6 +96,8 @@ apis:
   - type: Conventions
     url: conventions/zentail-conventions.yml
 common:
+- type: Website
+  url: https://www.zentail.com/
 - type: DomainSecurity
   url: security/zentail-domain-security.yml
 - type: DeveloperPortal
