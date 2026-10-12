@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/zentail/integrations
+- https://n8n.io/integrations/zentail/
+- https://composio.dev/toolkits/zentail
+- https://monid.ai/tools/zentail
+checked:
+- https://composio.dev/toolkits/zentail
+- https://monid.ai/tools/zentail
+- https://n8n.io/integrations/zentail/
+- https://zapier.com/apps/zentail/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
